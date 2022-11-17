@@ -94,18 +94,23 @@ fieldset{
 }
 .descripcionContacto {
     grid-area: contactos;
+    text-align: center;
+
 }
 
 .descripcionContacto p{
     font-size:1.2ch;
-    padding-right: 20px;
+    padding: 0px 20px 0px 20px;
+  
     
 }
 .facebook1{
     display: flex;
     grid-area: facebook;
 }
-
+.facebook1 p{
+    padding-top: 25px;
+}
 
 .imagen3{
     height:50px;
@@ -115,6 +120,9 @@ fieldset{
 .instagram1{
     display: flex;
     grid-area: instagram;
+}
+.instagram1 p{
+    padding-top: 25px;
 }
 
 .imagen4{
@@ -126,6 +134,9 @@ fieldset{
 .whatsapp1{
     display: flex;
     grid-area: whatsapp;
+}
+.whatsapp1 p{
+    padding-top: 25px;
 }
 .imagen5{
     height:50px;
@@ -215,6 +226,7 @@ footer p{
 article{
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
@@ -233,11 +245,11 @@ article{
 }
 
 .card__titulo{
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .card__descuento{
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .card__btn{
@@ -266,6 +278,7 @@ article{
 section{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 @media(max-width: 700px){
     
@@ -273,11 +286,12 @@ section{
         display: block;
         /*position: fixed*/
         top: 20px;
-        right: 20px;
+        right: 10px;
         
     }
     .menu-icon img{
         display:list-item;
+        padding-right: 0px;
     }
     nav ul{
         display: block;
@@ -339,9 +353,13 @@ section{
     }
     .facebook1{
         grid-area: facebook;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
+    .facebook1 p{
+        padding-top: 0px;
+    }
     
     .imagen3{
         height:50px;
@@ -350,6 +368,12 @@ section{
     }
     .instagram1{
         grid-area: instagram;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .instagram1 p{
+        padding-top: 0px;
     }
     
     .imagen4{
@@ -360,6 +384,12 @@ section{
     }
     .whatsapp1{
         grid-area: whatsapp;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatsapp1 p{
+        padding-top: 0px;
     }
     .imagen5{
         height:50px;
@@ -442,5 +472,9 @@ section{
         display:flex;
         height: 30px;
         align-items: center;
+    }
+
+    .Quien{ 
+        font-size: 160%;
     }
 }
