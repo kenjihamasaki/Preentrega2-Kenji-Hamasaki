@@ -305,6 +305,7 @@ section{
     .menu-icon:hover + ul{
         right: 0;
     }
+    /**/
     nav ul:hover{
         right: 0;
     }
