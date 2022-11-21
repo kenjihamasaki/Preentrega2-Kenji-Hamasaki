@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElAdmin DrinkStore</title>
     <link rel="shortcut icon" href="../assets/img/admin2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -43,18 +44,18 @@
                  <p>11-2494-3771</p>
             </div>
                 <form action="" method="post"   enctype="multipart/form-data">
-                    <label >
-                        nombre
-                        <input type="text" name="nombre"  placeholder="ingrese su nombre">
-                    </label>
-                    <label>
-                        @email
-                        <input type="text" name="email" placeholder="ingrese su email">
-                    </label>                
-                    <label>
-                        Contraseña
-                        <input type="password" name="contraseña" placeholder="ingrese su contraseña">
-                    </label>                            
+                    <div class="user">
+                        <input type="text" name="" required="">
+                        <label >nombre</label>
+                    </div>
+                    <div class="user">
+                        <input type="text" name="" required="">
+                        <label>email</label>
+                    </div>
+                    <div class="user">
+                        <input type="password" name="" required="">                
+                        <label>Contraseña</label>
+                    </div>                            
                     <textarea name="mensaje" placeholder="ingrese su mensaje"></textarea>
                     <input type="submit" value="enviar">
                     <!--<input type="reset" value="reset">-->
