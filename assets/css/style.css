@@ -321,7 +321,7 @@ footer p:nth-child(1){
 .card{
     background-color: gray;
     /*color: white;*/
-    width: 215px;
+    width: 300px;
     border: 1px solid;
     border-radius: 5px;
     padding: 20px;
@@ -577,14 +577,14 @@ footer p:nth-child(1){
         font-size: 130%;
         text-align: center;
     }
-    .card{
+    /*.card{
         background-color: gray;
-        /*color: white;*/
+        /*color: white;
         width: 300px;
         border: 1px solid;
         border-radius: 5px;
         padding: 20px;
         margin: 20px;
     
-    }
+    }*/
 }
