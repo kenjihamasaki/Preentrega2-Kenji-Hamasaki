@@ -373,6 +373,12 @@ footer p:nth-child(1){
     justify-content: center;
 }*/
 @media(max-width: 700px){
+    .imagen1{
+        align-items: center;
+        margin-left: 0px;
+        padding: 10px;
+        
+    }
     
     .menu-icon{
         display: block;
