@@ -372,7 +372,7 @@ footer p:nth-child(1){
     flex-wrap: wrap;
     justify-content: center;
 }*/
-@media(max-width: 800px){
+@media(max-width: 910px){
     .imagen1{
         align-items: center;
         margin-left: 0px;
