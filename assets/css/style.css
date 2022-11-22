@@ -377,6 +377,7 @@ footer p:nth-child(1){
         align-items: center;
         margin-left: 0px;
         padding: 10px;
+        padding-left: 0px;
         
     }
     
