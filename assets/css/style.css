@@ -312,11 +312,11 @@ footer p:nth-child(1){
     cursor:pointer;
 }
 
-/*article{
+article{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-}*/
+}
 
 .card{
     background-color: gray;
@@ -367,11 +367,11 @@ footer p:nth-child(1){
     text-shadow: 0 0 0.8px;
 }
 
-/*section{
+section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}*/
+}
 @media(max-width: 910px){
     .imagen1{
         align-items: center;
