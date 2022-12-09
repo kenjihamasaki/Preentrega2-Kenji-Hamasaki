@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+@import "quien";
+@import "navbar";
+@import "contacto";
+@import "footer";
+@import "cards";
+
+

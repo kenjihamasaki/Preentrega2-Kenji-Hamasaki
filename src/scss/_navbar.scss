@@ -1,0 +1,88 @@
+@import "mixins";
+nav {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(12, 12, 63);
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        @include mobile {
+            display: block;
+            position:fixed;
+            top: 0;
+            right: -200%;
+            background: #222;
+            width: 50%;
+            height: 100vh;
+            transition: 0.3s;
+            z-index: 100;
+        }
+        li{
+            padding: 10px;
+            @include mobile {
+                padding: 1rem;
+                display: end;
+                justify-content:end;
+                margin: 0;
+            }
+        }
+        
+    }
+    a{
+        font-weight: 400px ;
+        padding-right: 10px;
+        &:hover{
+            color: gray;
+        }
+    }   
+}
+@include mobile{
+    nav ul li:nth-child() {
+        background: none;
+        padding: 1/2rem;
+    }
+    .menu-icon:hover + ul{
+        right: 0;
+    }
+    nav ul:hover{
+        right: 0;
+    }
+}
+.container{
+    display: flex;
+    h3{
+        color: azure;
+        padding:30px 0px 10px 0px;
+        font-weight: bold;
+        font-size: large;
+    }
+}
+.imagen1{
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px;
+    @include mobile{
+        align-items: center;
+        margin-left: 0px;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+.menu-icon img{
+    filter: invert(100%);
+    height: 40px;
+    width: 50px;
+    padding-right: 20px;
+    display: none;
+    @include mobile {
+        display: block;
+        top: 20px;
+        right: 10px;
+        display:list-item;
+        padding-right: 0px;
+    }
+}

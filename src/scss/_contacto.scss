@@ -1,0 +1,226 @@
+@import "mixins";
+
+fieldset{
+    display: grid;
+    font-size:  2rem;
+    color: white;
+    text-shadow:black;
+    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../img/fondoAdmin.jpg);
+    background-size: cover;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "contactos mensaje"
+                         "facebook mensaje"
+                         "instagram mensaje"
+                         "whatsapp mensaje";
+    @include mobile{
+        display: grid;
+        font-size:  2rem;
+        color: white;
+        text-shadow:black;
+        background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../img/fondoAdmin.jpg);
+        background-size: cover;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "contacto"
+                             "facebook "
+                             "instagram "
+                             "whatsapp "
+                             "mensaje";
+    }
+    .descripcionContacto {
+        grid-area: contactos;
+        text-align: center;
+        h3{
+            @include mobile{
+                text-align: center; 
+            }
+        }
+        p{
+            font-size:1.2ch;
+            padding: 0px 20px 0px 20px;
+        }
+    }
+    img{
+        height:100px;
+        padding: 20px;
+        filter: invert(100%);
+        transform: scale(var(--escala,1));
+        transition: transform 0.25s;
+        &:hover{
+            --escala: 1.2;
+            cursor:pointer;
+        }
+    }
+    .facebook1{
+        display: flex;
+        grid-area: facebook;
+        @include mobile {
+            grid-area: facebook;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        p{
+            padding-top: 25px;
+            @include mobile{
+                padding-top: 0px; 
+            }
+        }
+    }
+    .instagram1{
+        display: flex;
+        grid-area: instagram;
+        @include mobile{
+            grid-area: instagram;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        p{
+           padding-top: 25px;
+           @include mobile{
+                padding-top: 0px;
+           } 
+        }
+        .imagen4{
+            padding-top: 25px;
+        }
+    }
+    .whatsapp1{
+        display: flex;
+        grid-area: whatsapp;
+        @include mobile{
+            grid-area: whatsapp;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        p{
+            padding-top: 25px;
+            @include mobile{
+                padding-top: 0px;  
+            }
+        }
+    }
+    form{
+        width:auto;
+        border: 1px solid;
+        border-radius: 5px;
+        margin: 20px;
+        margin-top: 10px;
+        grid-area: mensaje;
+        padding-top:20px ;
+        padding-bottom:20px ;
+        display: grid;
+        grid-template-rows: 100px 100px 100px 200px 50px;
+        grid-template-areas:"zona1"
+                            "zona2"
+                            "zona3"
+                            "zona4"
+                            "zona5";
+        @include mobile{
+            grid-area: mensaje;
+            display: grid;
+            grid-template-rows: 80px 80px 80px 180px 50px;
+            grid-template-areas:"zona1"
+                                "zona2"
+                                "zona3"
+                                "zona4"
+                                "zona5";
+        }
+        .user input{
+            background-color: transparent;   
+            color: white;
+            font-size: 16px;
+            padding: 10px ;
+            position: relative;
+            width: 90%;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+            margin-left: 10px;
+            padding-bottom: 0px;
+        }
+        .user label{
+        display: flex;
+        flex-direction: column;
+        padding: 10px ;
+        font-size: 20px;
+        position: relative;
+        left: 0;
+        top: -60px;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.5s;   
+        }
+        input:focus~label,
+        input:valid~label{
+            top: -85px;
+            left:0;
+            color: #8f7cec;
+            font-size: 18px;
+        }
+        textarea{
+            background-color: transparent;
+            color: white;
+            height: 100px;
+            position: relative;
+            width: auto;
+            border: none;
+            border: 1px solid #fff; 
+            font-size: medium;
+            grid-area: zona4;
+            margin: 10px;
+            margin-top: 20px;
+        }
+        label{
+            &:nth-child(1){
+                grid-area: zona1;
+                margin-top: 20px ;  
+            }
+            &:nth-child(2){
+                grid-area: zona2;
+                margin-top: 20px;
+            }
+            &:nth-child(3){
+                grid-area: zona3;
+                margin-top: 20px;
+            }
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+        }
+        input{
+            &:nth-child(5){
+                background: transparent;
+                font-size: 25px;
+                grid-area: zona5;
+                width: 50%;
+                color: #CBBDDB;
+                text-decoration: none;
+                text-transform: uppercase;
+                overflow: hidden;
+                transition: 0.5s;
+                letter-spacing: 4px;
+                border: 1px solid #8f7cec;
+                margin: auto;
+                &:hover{
+                        background: #8f7cec;
+                        color: #fff;
+                        border-radius: 5px;
+                        box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec,
+                                    0 0 100px #8f7cec;
+                    }
+                @include mobile{
+                    background-color: transparent;
+                    color: white;
+                } 
+                }
+        }
+    }
+}

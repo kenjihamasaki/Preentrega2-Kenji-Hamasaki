@@ -1,597 +1,509 @@
-
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    height: 90px;
-    background-color: rgb(12, 12, 63);
-    justify-content: space-between;
-    align-items: center;
-    
-
-
-}
-
-.container{
-    display: flex;
-}
-
-.container h3{
-    color: azure;
-    padding:30px 0px 10px 0px;
-    font-weight: bold;
-    font-size: large;
-}
-nav ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    
-    
-    
-}
-nav ul li {
-    padding: 10px;
-    
-    
-}
-
-/*inicio*/
-
-.imagen1{
-    align-items: center;
-    margin-left: 10px;
-    padding: 10px;
-    
+body {
+  background-color: black;
+  font-family: "Times New Roman", Times, serif;
 }
 
 a {
-    text-decoration: none;
-    color: azure;
+  text-decoration: none;
+  color: azure;
 }
 
-nav a{
-    font-weight: 400px ;
-    padding-right: 10px;
-}
-nav a:hover{
-    color: gray;
-}
-.menu-icon img{
-    filter: invert(100%);
-    height: 40px;
-    width: 50px;
-    padding-right: 20px;
-    display: none;
-    
-    
-}
-.imagen2{
-    background-image:  url(../img/fondoAdmin2.jpg);
-    background-size: auto;
-    margin: auto;
-    opacity: 50%;
-    
+.Quien {
+  font-size: 50px;
+  color: white;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/fondoAdmin.jpg);
+  background-size: cover;
+  padding: 50px;
+  text-shadow: 0 0 0.8px;
 }
 
-fieldset{
-    display: grid;
-    font-size:  2rem;
-    color: white;
-    text-shadow:black;
-    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../img/fondoAdmin.jpg);
-    background-size: cover;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "contactos mensaje"
-                         "facebook mensaje"
-                         "instagram mensaje"
-                         "whatsapp mensaje";
-    
-}
-.descripcionContacto {
-    grid-area: contactos;
+@media screen and (max-width: 910px) {
+  .Quien {
+    padding: 40px 10px 40px 10px;
+    font-size: 35px;
     text-align: center;
-
+  }
+}
+nav {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(12, 12, 63);
+  justify-content: space-between;
+  align-items: center;
 }
 
-.descripcionContacto p{
-    font-size:1.2ch;
-    padding: 0px 20px 0px 20px;
-  
-    
-}
-.facebook1{
-    display: flex;
-    grid-area: facebook;
-}
-.facebook1 p{
-    padding-top: 25px;
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
-.imagen3{
-    height:100px;
-    padding: 20px;
-    filter: invert(100%);
+@media screen and (max-width: 910px) {
+  nav ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    background: #222;
+    width: 50%;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 100;
+  }
 }
-.instagram1{
-    display: flex;
-    grid-area: instagram;
-}
-.instagram1 p{
-    padding-top: 25px;
-}
-
-.imagen4{
-    height: 100px;
-    padding: 20px;
-    padding-top: 25px;
-    filter: invert(100%);
-}
-.whatsapp1{
-    display: flex;
-    grid-area: whatsapp;
-}
-.whatsapp1 p{
-    padding-top: 25px;
-}
-.imagen5{
-    height:100px;
-    padding: 20px;
-    filter: invert(100%);
+nav ul li {
+  padding: 10px;
 }
 
-fieldset img{
-    transform: scale(var(--escala,1));
-    transition: transform 0.25s;
+@media screen and (max-width: 910px) {
+  nav ul li {
+    padding: 1rem;
+    display: end;
+    justify-content: end;
+    margin: 0;
+  }
 }
-fieldset img:hover{
-    --escala: 1.2;
-    cursor:pointer;
+nav a {
+  font-weight: 400px;
+  padding-right: 10px;
 }
 
-form{
-    width:auto;
-    border: 1px solid;
-    border-radius: 5px;
-    margin: 20px;
-    margin-top: 10px;
-    grid-area: mensaje;
-    padding-top:20px ;
-    padding-bottom:20px ;
+nav a:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 910px) {
+  nav ul li:nth-child {
+    background: none;
+    padding: 1/2rem;
+  }
+  .menu-icon:hover + ul {
+    right: 0;
+  }
+  nav ul:hover {
+    right: 0;
+  }
+}
+.container {
+  display: flex;
+}
+
+.container h3 {
+  color: azure;
+  padding: 30px 0px 10px 0px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.imagen1 {
+  align-items: center;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 910px) {
+  .imagen1 {
+    align-items: center;
+    margin-left: 0px;
+    padding: 10px;
+    padding-left: 0px;
+  }
+}
+.menu-icon img {
+  filter: invert(100%);
+  height: 40px;
+  width: 50px;
+  padding-right: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 910px) {
+  .menu-icon img {
+    display: block;
+    top: 20px;
+    right: 10px;
+    display: list-item;
+    padding-right: 0px;
+  }
+}
+fieldset {
+  display: grid;
+  font-size: 2rem;
+  color: white;
+  text-shadow: black;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/fondoAdmin.jpg);
+  background-size: cover;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "contactos mensaje" "facebook mensaje" "instagram mensaje" "whatsapp mensaje";
+}
+
+@media screen and (max-width: 910px) {
+  fieldset {
     display: grid;
-    grid-template-rows: 100px 100px 100px 200px 50px;
+    font-size: 2rem;
+    color: white;
+    text-shadow: black;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/fondoAdmin.jpg);
+    background-size: cover;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "contactos" "facebook " "instagram " "whatsapp " "mensaje";
+  }
+}
+fieldset .descripcionContacto {
+  grid-area: contactos;
+  text-align: center;
+}
+
+@media screen and (max-width: 910px) {
+  fieldset .descripcionContacto h3 {
+    text-align: center;
+  }
+}
+
+fieldset .descripcionContacto p {
+  font-size: 1.2ch;
+  padding: 0px 20px 0px 20px;
+}
+
+fieldset img {
+  height: 100px;
+  padding: 20px;
+  filter: invert(100%);
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+}
+
+fieldset img:hover {
+  --escala: 1.2;
+  cursor: pointer;
+}
+
+fieldset .facebook1 {
+  display: flex;
+  grid-area: facebook;
+}
+@media screen and (max-width: 910px) {
+  fieldset .facebook1 {
+    grid-area: facebook;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+fieldset .facebook1 p {
+  padding-top: 25px;
+}
+@media screen and (max-width: 910px) {
+  fieldset .facebook1 p{
+    padding-top: 0px;
+  }
+}
+
+fieldset .instagram1 {
+  display: flex;
+  grid-area: instagram;
+}
+@media screen and (max-width: 910px) {
+  fieldset .instagram1 {
+    grid-area: instagram;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+fieldset .instagram1 p {
+  padding-top: 25px;
+}
+@media screen and (max-width: 910px) {
+  fieldset .instagram1 p{
+    padding-top: 0px;
+  }
+}
+
+fieldset .instagram1 .imagen4 {
+  padding-top: 25px;
+}
+@media screen and (max-width: 910px) {
+  fieldset .whatsapp1 {
+    grid-area: whatsapp;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+fieldset .whatsapp1 {
+  display: flex;
+  grid-area: whatsapp;
+}
+
+fieldset .whatsapp1 p {
+  padding-top: 25px;
+}
+@media screen and (max-width: 910px) {
+  fieldset .whatsapp1 p{
+    padding-top: 0px;
+  }
+}
+
+fieldset form {
+  width: auto;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 20px;
+  margin-top: 10px;
+  grid-area: mensaje;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 200px 50px;
+  grid-template-areas: "zona1" "zona2" "zona3" "zona4" "zona5";
+}
+@media screen and (max-width: 910px) {
+  fieldset form {
+    grid-area: mensaje;
+    display: grid;
+    grid-template-rows: 80px 80px 80px 180px 50px;
     grid-template-areas:"zona1"
                         "zona2"
                         "zona3"
                         "zona4"
                         "zona5";
+  }
 }
 
-
-form .user input{
-    background-color: transparent;   
-    color: white;
-    font-size: 16px;
-    padding: 10px ;
-    position: relative;
-    width: 90%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-    margin-left: 10px;
-    padding-bottom: 0px;
-
-    
-
-
+fieldset form .user input {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  position: relative;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  margin-left: 10px;
+  padding-bottom: 0px;
 }
-form .user label{
+
+fieldset form .user label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+  position: relative;
+  left: 0;
+  top: -60px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+fieldset form input:focus ~ label,
+fieldset form input:valid ~ label {
+  top: -85px;
+  left: 0;
+  color: #8f7cec;
+  font-size: 18px;
+}
+
+fieldset form textarea {
+  background-color: transparent;
+  color: white;
+  height: 100px;
+  position: relative;
+  width: auto;
+  border: none;
+  border: 1px solid #fff;
+  font-size: medium;
+  grid-area: zona4;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+fieldset form label:nth-child(1) {
+  grid-area: zona1;
+  margin-top: 20px;
+}
+
+fieldset form label:nth-child(2) {
+  grid-area: zona2;
+  margin-top: 20px;
+}
+
+fieldset form label:nth-child(3) {
+  grid-area: zona3;
+  margin-top: 20px;
+}
+@media screen and (max-width: 910px) {
+  fieldset form label {
     display: flex;
     flex-direction: column;
-    padding: 10px ;
-    font-size: 20px;
-    position: relative;
-    left: 0;
-    top: -60px;
-    color: #fff;
-    pointer-events: none;
-    transition: 0.5s;
-}
-form input:focus~label,
-form input:valid~label{
-    top: -85px;
-    left:0;
-    color: #8f7cec;
-    font-size: 18px;
-
-}
-form textarea{
-    background-color: transparent;
-    color: white;
-    height: 100px;
-    position: relative;
-    width: auto;
-    border: none;
-    border-bottom: 1px solid #fff; 
-    font-size: medium;
-}
-
-form label:nth-child(1){
-    grid-area: zona1;
-    margin-top: 20px ;
-    
-}
-form label:nth-child(2){
-    grid-area: zona2;
-    margin-top: 20px;
-    
-}
-form label:nth-child(3){
-    grid-area: zona3;
-    margin-top: 20px;
-    
-}
-form textarea{
-    grid-area: zona4;
-    margin: 10px;
-    margin-top: 20px;
-}
-
-form input:nth-child(5){
-    background: transparent;
-    font-size: 25px;
-    grid-area: zona5;
-    width: 50%;
-    color: #CBBDDB;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    border: 1px solid #8f7cec;
-    margin: auto;
-}
-form input:nth-child(5):hover{
-    background: #8f7cec;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec,
-                0 0 100px #8f7cec;
+    align-items: center;
+    padding: 10px;
+  }
 }
 
 
+fieldset form input:nth-child(5) {
+  background: transparent;
+  font-size: 25px;
+  grid-area: zona5;
+  width: 50%;
+  color: #CBBDDB;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  border: 1px solid #8f7cec;
+  margin: auto;
+}
 
-footer{
+fieldset form input:nth-child(5):hover {
+  background: #8f7cec;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #8f7cec, 0 0 25px #8f7cec, 0 0 100px #8f7cec;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  color: white;
+  background-color: rgb(12, 12, 63);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 910px) {
+  footer {
     width: 100%;
-    height: 80px;
+    height: 170px;
     color: white;
     background-color: rgb(12, 12, 63);
-    display:flex;
-    justify-content: space-between;
-    
-}
-
-footer p{
-    padding-left: 20px;
-
-}
-footer p:nth-child(1){
-    padding-top: 10px;
-}
-
-.redSocial {
-    background-size: cover;
-    display :flex;
     align-items: center;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    flex-direction: row;
-    justify-content: flex-end;
-
-}
-.redSocial img{
     display: flex;
-    height: 80px;
-    padding-right: 10px;
-    transform: scale(var(--escala,1));
-    transition: transform 0.25s;
+    flex-direction: column;
+    padding-top: 0px;
+    justify-content: start;
+  }
 }
-.redSocial img:hover{
-    --escala: 1.2;
-    cursor:pointer;
-}
-
-article{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+footer p {
+  padding-left: 20px;
 }
 
-.card{
-    background-color: gray;
-    /*color: white;*/
-    width: 250px;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-
-}
-.card__img{
-    width: 100%;
-    border-radius: 5px;
+footer p:nth-child {
+  padding-top: 10px;
 }
 
-.card__titulo{
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
+@media screen and (max-width: 910px) {
+  footer p {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+footer .redSocial {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.card__descuento{
-    padding: 10px;
-}
-
-.card__btn{
-    width: 100%;   
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
-    justify-content:flex-end;
-    
-    
-}
-.card__btn:hover{
-    filter: invert(100%);
-}
-.Quien {
-    font-size: 50px;
-    color: white;
-    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../img/fondoAdmin.jpg);
+@media screen and (max-width: 910px) {
+  footer .redSocial {
     background-size: cover;
-    padding: 50px;
-    text-shadow: 0 0 0.8px;
-}
-
-section{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0px;
+  }
 }
-@media(max-width: 910px){
-    .imagen1{
-        align-items: center;
-        margin-left: 0px;
-        padding: 10px;
-        padding-left: 0px;
-        
-    }
-    
-    .menu-icon{
-        display: block;
-        /*position: fixed*/
-        top: 20px;
-        right: 10px;
-        
-    }
-    .menu-icon img{
-        display:list-item;
-        padding-right: 0px;
-    }
-    nav ul{
-        display: block;
-        position:fixed;
-        top: 0;
-        right: -200%;
-        background: #222;
-        width: 50%;
-        height: 100vh;
-        transition: 0.3s;
-        z-index: 100;
-        
-
-    }
-    nav ul li{
-        padding: 1rem;
-        display: end;
-        justify-content:end;
-        margin: 0;
-    }
-    nav ul li:nth-child{
-        background: none;
-        padding: 1/2rem;
-    }
-
-    .menu-icon:hover + ul{
-        right: 0;
-    }
-    /**/
-    nav ul:hover{
-        right: 0;
-    }
-    fieldset{
-        display: grid;
-        font-size:  2rem;
-        color: white;
-        text-shadow:black;
-        background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../img/fondoAdmin.jpg);
-        background-size: cover;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "contacto"
-                             "facebook "
-                             "instagram "
-                             "whatsapp "
-                             "mensaje";
-        
-    }
-    .descripcionContacto {
-        grid-area: contacto;
-
-    }
-    .descripcionContacto h3{
-        text-align: center;
-    }
-    
-    .descripcionContacto p{
-        font-size:1.2ch;
-        
-    }
-    .facebook1{
-        grid-area: facebook;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .facebook1 p{
-        padding-top: 0px;
-    }
-    
-    .imagen3{
-        height:100px;
-        padding: 20px;
-        filter: invert(100%);
-    }
-    .instagram1{
-        grid-area: instagram;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .instagram1 p{
-        padding-top: 0px;
-    }
-    
-    .imagen4{
-        height: 100px;
-        padding: 20px;
-        padding-top: 25px;
-        filter: invert(100%);
-    }
-    .whatsapp1{
-        grid-area: whatsapp;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .whatsapp1 p{
-        padding-top: 0px;
-    }
-    .imagen5{
-        height:100px;
-        padding: 20px;
-        filter: invert(100%);
-    }
-    
-    
-    form{
-        grid-area: mensaje;
-        display: grid;
-        grid-template-rows: 80px 80px 80px 180px 50px;
-        grid-template-areas:"zona1"
-                            "zona2"
-                            "zona3"
-                            "zona4"
-                            "zona5";
-    }
-    form label{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    form label input,textarea{
-        background-color: transparent;
-        color: white;
-    
-    }
-    
-    form label:nth-child(1){
-        grid-area: zona1;
-        
-    }
-    form label:nth-child(2){
-        grid-area: zona2;
-        
-    }
-    form label:nth-child(3){
-        grid-area: zona3;
-        
-    }
-    form textarea{
-        grid-area: zona4;
-    }
-    
-    form input:nth-child(5){
-        grid-area: zona5;
-    }
-    
-    
-    footer{
-        width: 100%;
-        height: 170px;
-        color: white;
-        background-color: rgb(12, 12, 63);
-        align-items: center;
-        display:flex;
-        flex-direction: column;
-        padding-top: 0px;
-        justify-content:start;
-        
-    }
-
-    footer p{
-        padding-left: 0px;
-        text-align: center;
-    }
-    
-    .redSocial {
-        background-size: cover;
-        display :flex;
-        align-items: center;
-        flex-direction: row;
-        padding-top: 0px;
-    }
-    .redSocial img{
-        display:flex;
-        height: 80px;
-        align-items: center;
-        transform: scale(var(--escala,1));
-        transition: transform 0.25s;
-    }
-    .redSocial img:hover{
-        --escala: 1.2;
-        cursor:pointer;
-    }
-
-    .Quien{ 
-        padding: 40px 10px 40px 10px;
-        font-size: 130%;
-        text-align: center;
-    }
-    .card{
-        background-color: gray;
-        color: white;
-        width: 300px;
-        border: 1px solid;
-        border-radius: 5px;
-        padding: 20px;
-        margin: 20px;
-    
-    }
+footer .redSocial img {
+  display: flex;
+  height: 40px;
+  padding-right: 20px;
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+  filter: invert(100%);
 }
+
+@media screen and (max-width: 910px) {
+  footer .redSocial img {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+  }
+}
+footer .redSocial img:hover {
+  --escala: 1.2;
+  cursor: pointer;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: gray;
+  width: 250px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card button {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+h4 .card h1 {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card button:hover {
+  filter: invert(100%);
+} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

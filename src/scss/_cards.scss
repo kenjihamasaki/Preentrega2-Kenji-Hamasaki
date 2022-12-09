@@ -1,0 +1,43 @@
+article{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@import "extend";
+@import "mixins";
+.card{
+    @extend %card;
+    
+    @include mobile{
+        background-color: gray;
+        color: white;
+        width: 300px;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+    }
+    img{
+        width: 100%;
+        border-radius: 5px;
+    }
+    h4 & h1{
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    p{
+        padding: 10px;
+    }
+    button{
+        @extend %button;
+        &:hover {
+            filter: invert(100%);
+        }
+    }
+}
