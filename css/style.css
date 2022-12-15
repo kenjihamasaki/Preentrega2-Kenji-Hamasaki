@@ -75,10 +75,10 @@ nav a:hover {
 }
 
 @media screen and (max-width: 790px) {
-  /*nav ul li:nth-child() {
+  nav ul li:nth-child() {
       background: none;
-      padding: 1/2rem;
-  }*/
+      padding: 1/2rem; 
+  }
   .menu-icon:hover + ul {
     right: 0;
   }
