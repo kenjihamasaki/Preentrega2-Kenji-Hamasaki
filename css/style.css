@@ -16,7 +16,7 @@ a {
 .Quien {
   font-size: 50px;
   color: white;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/fondoAdmin.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/img/fondoAdmin.jpg);
   background-size: cover;
   padding: 50px;
   text-shadow: 0 0 0.8px;
@@ -73,7 +73,9 @@ nav a {
 nav a:hover {
   color: gray;
 }
-
+nav a img:hover{
+  filter: invert(100%);
+}
 @media screen and (max-width: 790px) {
   nav ul li:nth-child() {
       background: none;
@@ -132,7 +134,7 @@ fieldset {
   font-size: 2rem;
   color: white;
   text-shadow: black;
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/fondoAdmin.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/img/fondoAdmin.jpg);
   background-size: cover;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -144,7 +146,7 @@ fieldset {
     font-size: 2rem;
     color: white;
     text-shadow: black;
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/fondoAdmin.jpg);
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../assets/img/fondoAdmin.jpg);
     background-size: cover;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -436,7 +438,7 @@ section {
 
 .card {
   background-color: gray;
-  width: 250px;
+  width: 400px;
   border: 1px solid;
   border-radius: 5px;
   padding: 20px;

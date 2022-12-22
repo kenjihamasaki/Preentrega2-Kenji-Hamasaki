@@ -38,7 +38,12 @@ nav {
         &:hover{
             color: gray;
         }
-    }   
+        img {
+            &:hover{
+                filter: invert(100%);
+            }
+        }
+    }
 }
 @include mobile{
     nav ul li:nth-child() {

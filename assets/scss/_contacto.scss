@@ -5,7 +5,7 @@ fieldset{
     font-size:  2rem;
     color: white;
     text-shadow:black;
-    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../img/fondoAdmin.jpg);
+    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../assets/img/fondoAdmin.jpg);
     background-size: cover;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -18,7 +18,7 @@ fieldset{
         font-size:  2rem;
         color: white;
         text-shadow:black;
-        background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../img/fondoAdmin.jpg);
+        background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12,0.75)), url(../assets/img/fondoAdmin.jpg);
         background-size: cover;
         grid-template-columns: auto;
         grid-template-rows: auto;
